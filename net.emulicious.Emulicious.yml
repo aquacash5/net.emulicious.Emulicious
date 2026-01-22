@@ -6,10 +6,11 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk25
 command: emulicious
 finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
   - --share=ipc
   - --device=dri
-  - --socket=pulseaudio
-  - --socket=x11
   - --filesystem=xdg-documents/ROMs
 
 modules:
